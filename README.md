@@ -10,6 +10,7 @@
 internal class SomeClass : ISomeInterface
 ...
 ```
+[C#: structs and Interface](https://docs.microsoft.com/en-us/archive/blogs/abhinaba/c-structs-and-interface)
 
 ---
 ### Решение задания 4
