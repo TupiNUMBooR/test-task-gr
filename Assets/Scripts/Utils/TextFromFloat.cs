@@ -1,3 +1,4 @@
+using System.Globalization;
 using TMPro;
 using UnityEngine;
 
@@ -18,7 +19,7 @@ namespace Utils
 
         void OnChange()
         {
-            modified.text = string.Format(format, prop.Value);
+            modified.text = string.Format(CultureInfo.InvariantCulture, format, prop.Value);
         }
     }
 }
