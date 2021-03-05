@@ -28,7 +28,7 @@ namespace Test
     {
     }
 
-    internal class SomeClass
+    internal class Test4
     {
         public void Setup()
         {
