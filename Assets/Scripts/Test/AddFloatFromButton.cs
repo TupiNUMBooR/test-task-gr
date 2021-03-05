@@ -1,28 +1,12 @@
-using UnityEngine;
-using UnityEngine.UI;
 using Utils;
 
 namespace Test
 {
-    [RequireComponent(typeof(Button))]
-    public class AddFloatFromButton : Modifier<Button>
+    public class AddFloatFromButton : ButtonHandler
     {
         public FloatProperty prop;
         public float addValue;
         
-        void Start()
-        {
-            modified.onClick.AddListener(OnClick);
-        }
-
-        void OnDestroy()
-        {
-            modified.onClick.RemoveListener(OnClick);
-        }
-
-        void OnClick()
-        {
-            prop.Value += addValue;
-        }
+        protected override void OnClick() => prop.Value += addValue;
     }
 }
