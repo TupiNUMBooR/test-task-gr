@@ -24,7 +24,8 @@ namespace Utils
 
         void OnInput(string value)
         {
-            prop.Value = float.Parse(value);
+            if (float.TryParse(value, out var result))
+                prop.Value = result;
         }
     }
 }
